@@ -1,0 +1,220 @@
+.wpm_fitment {
+    display: flex;
+    justify-content: space-between;
+    background: #b90000;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.wpm_fitment .fitment-col {
+    width: 19%;
+}
+
+.wpm_fitment .fitment-col select {
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.wpm_fitment_products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wpm_fitment_products .fitment-product {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 0px;
+    margin-top: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+    transition: 0.2s;
+    background: #ffffff;
+    color: #000;
+}
+
+.wpm_fitment_products .fitment-product:hover {
+    box-shadow: 0 0px 0px rgb(0 0 0 / 10%);
+}
+
+.top-fitment-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px 15px 0 0;
+}
+
+.wpm_fitment_products .fitment-product .main-name-fitment {
+    font-weight: bold;
+}
+
+.wpm_fitment_products .fitment-product .name-fitment {
+    text-align: left;
+    font-size: 20px;
+}
+
+.wpm_fitment_products .fitment-product .name-fitment .main-name-fitment {
+    font-size: 26px;
+}
+
+.wpm_fitment_products .fitment-product .open-fitment {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.top-fitment-details .open-fitment {
+    width: 10%;
+    cursor: pointer;
+}
+
+.top-fitment-details .name-fitment {
+    width: 70%;
+}
+
+.top-fitment-details .image-thumbnail {
+    width: 20%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-fitment .side-fitment {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-fitment .side-fitment .content-item-text {
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+}
+
+.content-fitment .side-fitment .converter-codes {
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content-fitment .side-fitment .content-item-text b {
+    margin-right: 10px;
+}
+
+.wpm_fitment.single {
+    flex-wrap: nowrap;
+}
+
+.wpm_fitment.single .fitment-col {
+    width: 100%;
+}
+
+.wpm_fitment.single .fitment-col input {
+    width: 99%;
+}
+
+.preloader-filters {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background: rgb(0 0 0 / 30%);
+    z-index: 9999;
+    display: none;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.content-fitment {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-fitment .header-fitment-product:nth-child(1) {
+    width: 28%;
+    border-right: 1px solid #ddd;
+}
+
+.content-fitment .header-fitment-product:nth-child(2) {
+    width: 72%;
+}
+
+.head-fitment-label {
+    display: flex;
+    background: #eee;
+    padding: 6px 0;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+}
+.head-fitment-label > div {
+    width: 100%;
+}
+
+.head-fitment-content {
+    display: flex;
+}
+
+.head-fitment-content > div {
+    width: 100%;
+    padding: 10px 0 0;
+}
+
+.img-item-content {
+    padding: 10px;
+}
+
+.other-attributes-fitment ul {
+    text-align: left;
+    list-style: none;
+    margin: 0 0 10px 10px;
+    padding: 0;
+}
+
+.value-item-content span {
+    display: block;
+}
+
+.top-fitment-details > div:nth-child(1) {
+    font-size: 22px;
+}
+
+@media(max-width: 768px) {
+    .content-fitment .header-fitment-product {
+        width: 100% !important;
+        border-right: none !important;
+    }
+}
+
+@media(max-width: 500px) {
+    .head-fitment-label {
+        font-size: 12px;
+    }
+    .head-fitment-content > div {
+        font-size: 12px;
+    }
+}
