@@ -4,7 +4,7 @@ Plugin Name: WPM Fitment API
 Plugin URI: https://wp-masters.com
 Description: Add Search Form with Fitment Data from API
 Author: wp-masters
-Version: 1.0
+Version: 1.1
 */
 
 define('FITMENT_PLUGIN_PATH', plugins_url('', __FILE__));
@@ -48,6 +48,7 @@ class WPM_Fitment_API
         }
 
         // Prepare Data
+	    $some = ['data'];
         $year = sanitize_text_field($_POST['year']);
         $make = sanitize_text_field($_POST['make']);
         $model = sanitize_text_field($_POST['model']);
