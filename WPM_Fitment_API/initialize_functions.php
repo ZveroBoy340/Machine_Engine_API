@@ -49,6 +49,9 @@ class WPM_Fitment_API
 
         // Prepare Data
 	    $some = ['data'];
+	    $some = ['data'];
+	    $some = ['data'];
+	    $some = ['data'];
         $year = sanitize_text_field($_POST['year']);
         $make = sanitize_text_field($_POST['make']);
         $model = sanitize_text_field($_POST['model']);
